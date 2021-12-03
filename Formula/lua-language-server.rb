@@ -10,6 +10,12 @@ class LuaLanguageServer < Formula
   license "MIT"
   head "https://github.com/sumneko/lua-language-server.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/lua-language-server-2.5.1"
+    sha256 cellar: :any_skip_relocation, big_sur:      "13cb5c67cf5eda206efa7e31e5875cd51e6f18c07645061fa5c8c0e4f2188cec"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f329f26fcdc0a7f4b6bb67b1c99e3b23adfac3b60903bfa7ce23c0e2f647bf9b"
+  end
+
   depends_on "ninja" => :build
 
   def install
