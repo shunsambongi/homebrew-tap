@@ -10,6 +10,12 @@ class TaploCli < Formula
     regex(/release-cli-(\d+(?:\.\d+)+)$/i)
   end
 
+  bottle do
+    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/taplo-cli-0.4.1"
+    sha256 cellar: :any_skip_relocation, big_sur:      "a95d9e4715db78bfda59741dd455f43844910f845c6329109ea08ef71c07df11"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e5850a1e46a58062cee55be797390f6831c715cf3b7a74a2655e899f165a3d02"
+  end
+
   depends_on "rust" => :build
   on_linux do
     depends_on "pkg-config" => :build
