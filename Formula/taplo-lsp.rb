@@ -10,6 +10,12 @@ class TaploLsp < Formula
     regex(/release-lsp-(\d+(?:\.\d+)+)$/i)
   end
 
+  bottle do
+    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/taplo-lsp-0.2.6"
+    sha256 cellar: :any_skip_relocation, big_sur:      "f74bbd6d2676ea4b62ff111cf286a93f5c30e81001fdd390b20ee90d8ebd5d2c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "19eb948c8b2f0bd35d6a24c952b408bc26e066eee4bdee57e72ba4b1f311eb97"
+  end
+
   depends_on "rust" => :build
   on_linux do
     depends_on "openssl@1.1"
