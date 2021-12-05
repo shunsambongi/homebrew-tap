@@ -1,8 +1,8 @@
 class TaploCli < Formula
   desc "Taplo TOML Utility"
   homepage "https://taplo.tamasfe.dev"
-  url "https://github.com/tamasfe/taplo/archive/refs/tags/release-cli-0.4.1.tar.gz"
-  sha256 "40af2db2fe2a17b2518840c157d59a065d3ea27e0c6000919048ad31f40e919c"
+  url "https://github.com/tamasfe/taplo/archive/refs/tags/release-cli-0.5.0.tar.gz"
+  sha256 "65c5223cb5bd5a6d40200ca72f55b120675292accf0a0d9a9eb8d11ebdcb57ae"
   license "MIT"
 
   livecheck do
@@ -18,7 +18,6 @@ class TaploCli < Formula
 
   depends_on "rust" => :build
   on_linux do
-    depends_on "pkg-config" => :build
     depends_on "openssl@1.1"
   end
 
