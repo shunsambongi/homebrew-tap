@@ -5,8 +5,8 @@ class LuaLanguageServer < Formula
   desc "Language Server for Lua"
   homepage "https://github.com/sumneko/lua-language-server"
   url "https://github.com/sumneko/lua-language-server.git",
-      tag:      "2.5.1",
-      revision: "fb9dc04fc284843c021c4dc912a0a1b01cb0b6a9"
+      tag:      "2.5.2",
+      revision: "cb2042160865589b5534a6bf0b6c366ae4ab1d99"
   license "MIT"
   head "https://github.com/sumneko/lua-language-server.git", branch: "master"
 
@@ -21,7 +21,7 @@ class LuaLanguageServer < Formula
   def install
     if OS.mac?
       # Disable test that circumvents Homebrew's sandboxed environment.
-      # (NSSearchPathForDirectoriesInDomains doesn't respect $HOME)
+      # (NSSearchPathForDirectoriesInDomains doesn't respect $HOME set by build environment)
       [buildpath.to_s, "#{buildpath}/3rd/luamake"].each do |dir|
         inreplace "#{dir}/3rd/bee.lua/test/test_filesystem.lua" do |s|
           s.gsub! "function test_fs:test_appdata_path()", "function appdata_path()"
@@ -47,22 +47,39 @@ class LuaLanguageServer < Formula
     prefix.install "main.lua"
     prefix.install "debugger.lua"
     libexec.install "bin/#{platform}" => "bin"
-
-    # TODO: should I use XDG_STATE_HOME for logs instead of /usr/local/var/log?
-    File.write "lua-language-server", <<~EOS
-      #!/bin/sh
-      exec "#{libexec}/bin/lua-language-server" "#{opt_prefix}/main.lua" --logpath="#{var}/log/lua-language-server" --metapath="#{opt_prefix}/meta"
-    EOS
-
-    bin.install "lua-language-server"
+    bin.write_exec_script "#{libexec}/bin/lua-language-server"
   end
 
   test do
-    (testpath/"test.lua").write 'print("Hello from Lua Language Server")'
+    output = shell_output("#{bin}/lua-language-server -e 'print(1 + 1)'").chomp
+    assert_equal "2", output
+    # def rpc(json)
+    #   "Content-Length: #{json.size}\r\n\r\n#{json}"
+    # end
 
-    require "open3"
-    Open3.popen3("#{libexec}/bin/lua-language-server", testpath/"test.lua") do |_, stdout, _|
-      assert_equal "Hello from Lua Language Server", stdout.read.strip
-    end
+    # require "open3"
+    # Open3.popen3("#{bin}/lua-language-server") do |stdin, stdout, _|
+    #   sleep 1
+    #   message = rpc <<~EOF
+    #     {
+    #       "jsonrpc":"2.0",
+    #       "id":1,
+    #       "method":"initialize",
+    #       "params":{
+    #         "capabilities":{}
+    #       }
+    #     }
+    #   EOF
+    #
+    #   stdin.write message
+    #   sleep 1
+    #   stdin.close
+    #
+    #   output = stdout.read
+    #   expected = /Content-Length: \d+\r\n\r\n/
+    #   puts output
+    #
+    #   assert_match expected, output
+    # end
   end
 end
