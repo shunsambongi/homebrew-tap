@@ -11,9 +11,9 @@ class LuaLanguageServer < Formula
   head "https://github.com/sumneko/lua-language-server.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/lua-language-server-2.5.1"
-    sha256 cellar: :any_skip_relocation, big_sur:      "13cb5c67cf5eda206efa7e31e5875cd51e6f18c07645061fa5c8c0e4f2188cec"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "f329f26fcdc0a7f4b6bb67b1c99e3b23adfac3b60903bfa7ce23c0e2f647bf9b"
+    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/lua-language-server-2.5.2"
+    sha256 cellar: :any_skip_relocation, big_sur:      "501e1dbd0715d1fd9e6c51ebadeb1cc9b39910dd5e1a464a7ca48747e013706a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "9a682d8633f839ef0680c830e5d4ba7e62f506c4f1d8e8fbad75db2f5bed0aa2"
   end
 
   depends_on "ninja" => :build
