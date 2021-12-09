@@ -7,6 +7,12 @@ class YamlLanguageServer < Formula
   sha256 "c5413137ec0ebf79a4368fd97611f2ae6d08a0c4ee2d6efb28763982a7e05e2a"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/yaml-language-server-1.2.2"
+    sha256 cellar: :any_skip_relocation, big_sur:      "acd996ffd610cb0b14ea0aa5be531cc47da5b1011b973ebb9d3d98d97e7e54d5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "130ec17d2937266fd8d27ae5b48daec80c36f07570c3e15a4bc5b243656686ab"
+  end
+
   depends_on "node"
 
   def install
