@@ -7,6 +7,12 @@ class VscodeLangserversExtracted < Formula
   sha256 "cbe6e3a821875a94ba7185454f897cdd1be5f931faad99625a067cc0615f33ed"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/vscode-langservers-extracted-3.0.2"
+    sha256 cellar: :any_skip_relocation, big_sur:      "b23577bb586ab318ce55bde6a9a77bf55c084d7f1f846952644b5b49fd7cbd4a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "50ca53d725f4d9fc376d24a8dd873910c78394147ed3e8557ccb068c1d7ca06e"
+  end
+
   depends_on "node"
 
   def install
