@@ -7,6 +7,12 @@ class DockerfileLanguageServerNodejs < Formula
   sha256 "4318de559b9dedd40f1dc6e181f59bd10a3c4a37a84e0260f14fa340aa3b0952"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/dockerfile-language-server-nodejs-0.7.2"
+    sha256 cellar: :any_skip_relocation, big_sur:      "0dd1ab056530c1389440329801e87aaf3b26a496b794dedf7920cb4b858d5cc7"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "fdded2dd596b879a9bda00ddfb0f16b9ed00215a508ebca773c376aa185239b3"
+  end
+
   depends_on "node"
 
   def install
