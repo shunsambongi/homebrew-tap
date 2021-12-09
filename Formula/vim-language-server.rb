@@ -7,6 +7,12 @@ class VimLanguageServer < Formula
   sha256 "40144aa5eb6ab0d9e2e6c3438f5d68a37ee26ce1a77666ef49c84fef1fa22c62"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/vim-language-server-2.2.5"
+    sha256 cellar: :any_skip_relocation, big_sur:      "9275ecf4bb6879c0dc31183b24fe66b02ccff0f16319d370106f8f0bc6b39e1d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "aeeddd38a7d012058ddc55f864625f16b1e94c7ba899b5514ff7c412c79d2e25"
+  end
+
   depends_on "node"
 
   def install
