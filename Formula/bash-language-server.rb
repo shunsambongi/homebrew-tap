@@ -7,6 +7,12 @@ class BashLanguageServer < Formula
   sha256 "6e00d79e9ae95586c567c3919ee81c6e82bb7ef106e4bfaf3c84d3a94dccb20e"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/bash-language-server-2.0.0"
+    sha256 cellar: :any_skip_relocation, big_sur:      "bc32ce2e13d18ecdf4b8f88c618bab597d408d9764bf8f0447477cd4684ab392"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c6e4a332bd8c4c9cd4fa9df1ac35ff897467e6ea110f27727d092585e2fbe606"
+  end
+
   depends_on "node"
 
   def install
