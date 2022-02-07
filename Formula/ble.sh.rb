@@ -6,6 +6,12 @@ class BleSh < Formula
   license "BSD-3-Clause"
   head "https://github.com/akinomyoga/ble.sh.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/ble.sh-0.3.3"
+    sha256 cellar: :any_skip_relocation, big_sur:      "e131f044dbdeafb01a0fc705ad3c685860d74df85186adcabbf0f44afd517f4b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "3a978363b4a03a71a3bff87b6d4f93abf25e0889aa4b5a73833a0405c61af7f0"
+  end
+
   depends_on "gawk" => :build
   depends_on "make" => :build
   depends_on "bash"
