@@ -7,6 +7,12 @@ class Radian < Formula
   sha256 "d05701f4be8c01c53a0bedb0fa0822a14a4b1fff4b8980bfc11712b9319b261e"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/radian-0.5.13"
+    sha256 cellar: :any,                 big_sur:      "b9fe65e5fc8d6d1ba22e1dadae1ef71f04d414962c69f46b2461987a218b70c9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "dc861f1c89f5ff30e6be41355cadc41cb257ba5ac67b6678ccac25a46a89e572"
+  end
+
   depends_on "python"
   depends_on "r"
 
