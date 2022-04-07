@@ -11,9 +11,9 @@ class TaploCli < Formula
   end
 
   bottle do
-    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/taplo-cli-0.5.0"
-    sha256 cellar: :any_skip_relocation, big_sur:      "4d341bfe821ef58463344d6eb233fb7d5f157b61b1c1001b37f0241d04f16035"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "65d3c77235fa0661361e00c1790c01efe1099c881591ecc47432d4f89df28e3d"
+    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/taplo-cli-0.6.1"
+    sha256 cellar: :any,                 big_sur:      "55f6f6f241fbf72cb8a94377a637ead0455f8e76c79f976d63b73d5309a4993b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "7cc62f2b95c5960453801b272d47d5738e0dd8883eab030e71bd681a175e8505"
   end
 
   depends_on "rust" => :build
