@@ -1,8 +1,8 @@
 class TaploCli < Formula
   desc "Taplo TOML Utility"
   homepage "https://taplo.tamasfe.dev"
-  url "https://github.com/tamasfe/taplo/archive/refs/tags/release-cli-0.5.0.tar.gz"
-  sha256 "65c5223cb5bd5a6d40200ca72f55b120675292accf0a0d9a9eb8d11ebdcb57ae"
+  url "https://github.com/tamasfe/taplo/archive/refs/tags/release-cli-0.6.1.tar.gz"
+  sha256 "8ef4daebb71931c6516322d2cbb452eadf470d74413b30f8f4e986bb87ea8187"
   license "MIT"
 
   livecheck do
@@ -17,13 +17,12 @@ class TaploCli < Formula
   end
 
   depends_on "rust" => :build
-  on_linux do
-    depends_on "openssl@1.1"
-  end
+  depends_on "openssl@1.1"
+  uses_from_macos "zlib"
 
   def install
     ENV["OPENSSL_DIR"] = Formula["openssl@1.1"].opt_prefix if OS.linux?
-    system "cargo", "install", *std_cargo_args(path: "taplo-cli")
+    system "cargo", "install", *std_cargo_args(path: "crates/taplo-cli")
   end
 
   test do
