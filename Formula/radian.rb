@@ -3,8 +3,8 @@ class Radian < Formula
 
   desc "21 century R console"
   homepage "https://github.com/randy3k/radian"
-  url "https://files.pythonhosted.org/packages/f5/1b/56abbf044c8d07374af5842be86a83d2888daa38ba9c2bad1681b88ac892/radian-0.5.13.tar.gz"
-  sha256 "d05701f4be8c01c53a0bedb0fa0822a14a4b1fff4b8980bfc11712b9319b261e"
+  url "https://files.pythonhosted.org/packages/a2/21/58fa19a55b60b3bf2d2281a221e268d3401cc00b2530ba6292a32f48e959/radian-0.6.0.tar.gz"
+  sha256 "a3b522f553205202a182d524af493ce43e8840d91a306a8ea074054cf2a3648d"
   license "MIT"
 
   bottle do
@@ -21,9 +21,9 @@ class Radian < Formula
     sha256 "920f0d66a896c2d99f0adbb391f990a84091179542c205fa53ce5787aff87954"
   end
 
-  resource "lineedit" do
-    url "https://files.pythonhosted.org/packages/9f/ea/dd0b274a44ae64e0688cf6da5a56df757f1b48aa6b358fd8b8aa838aa851/lineedit-0.1.6.tar.gz"
-    sha256 "f4795479154e350ad9cf6e8be6ad3a78f10f892b99675af2f8140f2d847f6f3f"
+  resource "prompt-toolkit" do
+    url "https://files.pythonhosted.org/packages/59/68/4d80f22e889ea34f20483ae3d4ca3f8d15f15264bcfb75e52b90fb5aefa5/prompt_toolkit-3.0.29.tar.gz"
+    sha256 "bd640f60e8cecd74f0dc249713d433ace2ddc62b65ee07f96d358e0b152b6ea7"
   end
 
   resource "pycparser" do
@@ -37,8 +37,8 @@ class Radian < Formula
   end
 
   resource "rchitect" do
-    url "https://files.pythonhosted.org/packages/a5/20/b0e320ea5d92d04bbf3490254b8579ff44a5fc7af915d58443b7cf620f62/rchitect-0.3.35.tar.gz"
-    sha256 "bd652e14041d9371158ef9f4362af096d7bbe2d44593a9dab2bb0d58ff3db4ae"
+    url "https://files.pythonhosted.org/packages/6e/62/d7f35b3a9dfddda7f49a44a02135660c1031f95783d8f94437fccf2c85d7/rchitect-0.3.36.tar.gz"
+    sha256 "29dc7de687e6bb5823523d4170086cdf0aabb374a2807cf01873285b3897da4a"
   end
 
   resource "six" do
