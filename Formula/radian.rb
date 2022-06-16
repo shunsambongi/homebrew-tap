@@ -3,8 +3,8 @@ class Radian < Formula
 
   desc "21 century R console"
   homepage "https://github.com/randy3k/radian"
-  url "https://files.pythonhosted.org/packages/a2/21/58fa19a55b60b3bf2d2281a221e268d3401cc00b2530ba6292a32f48e959/radian-0.6.0.tar.gz"
-  sha256 "a3b522f553205202a182d524af493ce43e8840d91a306a8ea074054cf2a3648d"
+  url "https://files.pythonhosted.org/packages/97/74/8fb667738464d2c853409b7f43ee418139c50f957db9993fee68a73fc654/radian-0.6.3.tar.gz"
+  sha256 "9aa6e1afc619deee99ae16dc38237f1cba52fbbd7e70464f054ce50edb00e8ef"
   license "MIT"
 
   bottle do
@@ -32,8 +32,8 @@ class Radian < Formula
   end
 
   resource "Pygments" do
-    url "https://files.pythonhosted.org/packages/94/9c/cb656d06950268155f46d4f6ce25d7ffc51a0da47eadf1b164bbf23b718b/Pygments-2.11.2.tar.gz"
-    sha256 "4e426f72023d88d03b2fa258de560726ce890ff3b630f88c21cbb8b2503b8c6a"
+    url "https://files.pythonhosted.org/packages/59/0f/eb10576eb73b5857bc22610cdfc59e424ced4004fe7132c8f2af2cc168d3/Pygments-2.12.0.tar.gz"
+    sha256 "5eb116118f9612ff1ee89ac96437bb6b49e8f04d8a13b514ba26f620208e26eb"
   end
 
   resource "rchitect" do
