@@ -6,6 +6,12 @@ class Pistol < Formula
   license "MIT"
   head "https://github.com/doronbehar/pistol.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/pistol-0.3.2"
+    sha256 cellar: :any,                 big_sur:      "a66849c17dd640dd70dd5743256f1aa146a098d3992cb7c0244c2013cfd94343"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "bd724fe5764c70c66c74dbca1b784ccb77a27f5efc749d8f85072f81049f0e6c"
+  end
+
   depends_on "go" => :build
   depends_on "libmagic"
 
