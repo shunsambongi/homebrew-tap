@@ -8,9 +8,9 @@ class VscodeLangserversExtracted < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/vscode-langservers-extracted-3.0.2"
-    sha256 cellar: :any_skip_relocation, big_sur:      "b23577bb586ab318ce55bde6a9a77bf55c084d7f1f846952644b5b49fd7cbd4a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "50ca53d725f4d9fc376d24a8dd873910c78394147ed3e8557ccb068c1d7ca06e"
+    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/vscode-langservers-extracted-4.5.0"
+    sha256 cellar: :any_skip_relocation, monterey:     "292104c4709cccdc575c9a24881bb4a10a59a1a9e25d8c8bc65f2f4fde8fc744"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "13b164c0c0f9b0ab529c8e4ffd77b969c1f7c67c3e0791b069544cbbf7b5ac8b"
   end
 
   depends_on "node"
