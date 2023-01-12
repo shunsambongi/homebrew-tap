@@ -8,9 +8,9 @@ class DockerfileLanguageServerNodejs < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/dockerfile-language-server-nodejs-0.7.2"
-    sha256 cellar: :any_skip_relocation, big_sur:      "0dd1ab056530c1389440329801e87aaf3b26a496b794dedf7920cb4b858d5cc7"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "fdded2dd596b879a9bda00ddfb0f16b9ed00215a508ebca773c376aa185239b3"
+    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/dockerfile-language-server-nodejs-0.9.0"
+    sha256 cellar: :any_skip_relocation, monterey:     "30263d48331a33fa8b3e4fa9def410946d0f36d21dadadbc22678324c81131c1"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "3dba82ad0e5823839c5e2f5c8e32f8f06da67f2710c5cc0d937ebd54fd9e7713"
   end
 
   depends_on "node"
