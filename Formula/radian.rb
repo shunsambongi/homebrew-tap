@@ -3,8 +3,8 @@ class Radian < Formula
 
   desc "21 century R console"
   homepage "https://github.com/randy3k/radian"
-  url "https://files.pythonhosted.org/packages/97/74/8fb667738464d2c853409b7f43ee418139c50f957db9993fee68a73fc654/radian-0.6.3.tar.gz"
-  sha256 "9aa6e1afc619deee99ae16dc38237f1cba52fbbd7e70464f054ce50edb00e8ef"
+  url "https://files.pythonhosted.org/packages/8f/1e/708089897863a6d5c8ab56d18e4577576c3bc75a9b4d068f7ee6e65afe66/radian-0.6.4.tar.gz"
+  sha256 "4524a10335a6464a423a58ab85544fb37ebb9973cd647b00cc4eb40637bdf40c"
   license "MIT"
 
   bottle do
@@ -17,13 +17,13 @@ class Radian < Formula
   depends_on "r"
 
   resource "cffi" do
-    url "https://files.pythonhosted.org/packages/00/9e/92de7e1217ccc3d5f352ba21e52398372525765b2e0c4530e6eb2ba9282a/cffi-1.15.0.tar.gz"
-    sha256 "920f0d66a896c2d99f0adbb391f990a84091179542c205fa53ce5787aff87954"
+    url "https://files.pythonhosted.org/packages/2b/a8/050ab4f0c3d4c1b8aaa805f70e26e84d0e27004907c5b8ecc1d31815f92a/cffi-1.15.1.tar.gz"
+    sha256 "d400bfb9a37b1351253cb402671cea7e89bdecc294e8016a707f6d1d8ac934f9"
   end
 
   resource "prompt-toolkit" do
-    url "https://files.pythonhosted.org/packages/59/68/4d80f22e889ea34f20483ae3d4ca3f8d15f15264bcfb75e52b90fb5aefa5/prompt_toolkit-3.0.29.tar.gz"
-    sha256 "bd640f60e8cecd74f0dc249713d433ace2ddc62b65ee07f96d358e0b152b6ea7"
+    url "https://files.pythonhosted.org/packages/fb/93/180be2342f89f16543ec4eb3f25083b5b84eba5378f68efff05409fb39a9/prompt_toolkit-3.0.36.tar.gz"
+    sha256 "3e163f254bef5a03b146397d7c1963bd3e2812f0964bb9a24e6ec761fd28db63"
   end
 
   resource "pycparser" do
@@ -32,13 +32,13 @@ class Radian < Formula
   end
 
   resource "Pygments" do
-    url "https://files.pythonhosted.org/packages/59/0f/eb10576eb73b5857bc22610cdfc59e424ced4004fe7132c8f2af2cc168d3/Pygments-2.12.0.tar.gz"
-    sha256 "5eb116118f9612ff1ee89ac96437bb6b49e8f04d8a13b514ba26f620208e26eb"
+    url "https://files.pythonhosted.org/packages/da/6a/c427c06913204e24de28de5300d3f0e809933f376e0b7df95194b2bb3f71/Pygments-2.14.0.tar.gz"
+    sha256 "b3ed06a9e8ac9a9aae5a6f5dbe78a8a58655d17b43b93c078f094ddc476ae297"
   end
 
   resource "rchitect" do
-    url "https://files.pythonhosted.org/packages/6e/62/d7f35b3a9dfddda7f49a44a02135660c1031f95783d8f94437fccf2c85d7/rchitect-0.3.36.tar.gz"
-    sha256 "29dc7de687e6bb5823523d4170086cdf0aabb374a2807cf01873285b3897da4a"
+    url "https://files.pythonhosted.org/packages/d0/39/0b6c2ca15c8d83000b661abdb53b1ee3f6138416eda2dfdb4e0e872339c1/rchitect-0.3.40.tar.gz"
+    sha256 "1c5de5c4914dcb34225e7b62dbfc5df7b857b0b4bc18d4adf03611c45847b8b7"
   end
 
   resource "six" do
