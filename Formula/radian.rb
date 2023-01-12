@@ -8,9 +8,9 @@ class Radian < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/radian-0.6.3"
-    sha256 cellar: :any,                 big_sur:      "22565c5aeccd67ca2b02e3bbdaf4cbccd63623483d1dd6022a60de7de7ac25be"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "2a9e8aabb17f69697dd6cb1b3802ef858303ed2a18816f91e3339de3c14193a3"
+    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/radian-0.6.4"
+    sha256 cellar: :any_skip_relocation, monterey:     "5fc12f009680e158dfc6aa12ccf55ecc82a58ef0804e12dcc8b88fa11a390c03"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "838f0adf7b9f1af84bc3ac578c207a90c79e9fac97da813bcc8e24ce73a52d0f"
   end
 
   depends_on "python"
