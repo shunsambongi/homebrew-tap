@@ -8,9 +8,9 @@ class VimLanguageServer < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/vim-language-server-2.2.5"
-    sha256 cellar: :any_skip_relocation, big_sur:      "9275ecf4bb6879c0dc31183b24fe66b02ccff0f16319d370106f8f0bc6b39e1d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "aeeddd38a7d012058ddc55f864625f16b1e94c7ba899b5514ff7c412c79d2e25"
+    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/vim-language-server-2.3.0"
+    sha256 cellar: :any_skip_relocation, monterey:     "232957da5e023eb4e9027313fd976526b3f733caf7fc3d421ff214914e682460"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ca9072ce549a70abc58d18bd97b57a9f8c1f42f11c8eed04e513dffe22c99c2b"
   end
 
   depends_on "node"
