@@ -7,9 +7,9 @@ class Pistol < Formula
   head "https://github.com/doronbehar/pistol.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/pistol-0.3.2"
-    sha256 cellar: :any,                 big_sur:      "a66849c17dd640dd70dd5743256f1aa146a098d3992cb7c0244c2013cfd94343"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "bd724fe5764c70c66c74dbca1b784ccb77a27f5efc749d8f85072f81049f0e6c"
+    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/pistol-0.4.2"
+    sha256 cellar: :any,                 monterey:     "3cf730837dd361286bdb2da07096f5114526c2593066449be6db2735f7dd1e1a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "b42dc7a2dcbf4ff2c5c90b8f011e471fdf3a2ac8db1343dca6914da3afafe8f7"
   end
 
   depends_on "go" => :build
