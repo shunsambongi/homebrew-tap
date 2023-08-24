@@ -56,6 +56,6 @@ class Radian < Formula
   end
 
   test do
-    system "radian", "--version"
+    system "#{bin}/radian", "--version"
   end
 end

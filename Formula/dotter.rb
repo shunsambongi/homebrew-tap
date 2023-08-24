@@ -1,5 +1,5 @@
 class Dotter < Formula
-  desc "Dotfile manager and templater written in rust 🦀"
+  desc "Dotfile manager and templater written in rust"
   homepage "https://github.com/SuperCuber/dotter"
   url "https://github.com/SuperCuber/dotter/archive/v0.12.14.tar.gz"
   sha256 "1fdb77ec4699878e4f5492e04fbb9eada53f0ecddfa693a2918a5fd01350c64b"
