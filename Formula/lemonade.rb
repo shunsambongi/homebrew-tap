@@ -11,6 +11,10 @@ class Lemonade < Formula
     system "go", "build", *std_go_args(ldflags: "-s -w")
   end
 
+  service do
+    run [opt_bin/"lemonade", "server"]
+  end
+
   test do
     system "#{bin}/lemonade", "--help"
   end
