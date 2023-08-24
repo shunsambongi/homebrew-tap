@@ -3,8 +3,8 @@ class Radian < Formula
 
   desc "21 century R console"
   homepage "https://github.com/randy3k/radian"
-  url "https://files.pythonhosted.org/packages/8f/1e/708089897863a6d5c8ab56d18e4577576c3bc75a9b4d068f7ee6e65afe66/radian-0.6.4.tar.gz"
-  sha256 "4524a10335a6464a423a58ab85544fb37ebb9973cd647b00cc4eb40637bdf40c"
+  url "https://files.pythonhosted.org/packages/6e/d1/2d270f061754368f9c5802805c05f9273e632e0343e65f1ed1053a73892d/radian-0.6.7.tar.gz"
+  sha256 "297fe1c6581e7e50a70ed06614a5eb41e67aa96319e6834188c351d970435134"
   license "MIT"
 
   bottle do
@@ -22,8 +22,8 @@ class Radian < Formula
   end
 
   resource "prompt-toolkit" do
-    url "https://files.pythonhosted.org/packages/fb/93/180be2342f89f16543ec4eb3f25083b5b84eba5378f68efff05409fb39a9/prompt_toolkit-3.0.36.tar.gz"
-    sha256 "3e163f254bef5a03b146397d7c1963bd3e2812f0964bb9a24e6ec761fd28db63"
+    url "https://files.pythonhosted.org/packages/9a/02/76cadde6135986dc1e82e2928f35ebeb5a1af805e2527fe466285593a2ba/prompt_toolkit-3.0.39.tar.gz"
+    sha256 "04505ade687dc26dc4284b1ad19a83be2f2afe83e7a828ace0c72f3a1df72aac"
   end
 
   resource "pycparser" do
@@ -31,14 +31,14 @@ class Radian < Formula
     sha256 "e644fdec12f7872f86c58ff790da456218b10f863970249516d60a5eaca77206"
   end
 
-  resource "Pygments" do
-    url "https://files.pythonhosted.org/packages/da/6a/c427c06913204e24de28de5300d3f0e809933f376e0b7df95194b2bb3f71/Pygments-2.14.0.tar.gz"
-    sha256 "b3ed06a9e8ac9a9aae5a6f5dbe78a8a58655d17b43b93c078f094ddc476ae297"
+  resource "pygments" do
+    url "https://files.pythonhosted.org/packages/d6/f7/4d461ddf9c2bcd6a4d7b2b139267ca32a69439387cc1f02a924ff8883825/Pygments-2.16.1.tar.gz"
+    sha256 "1daff0494820c69bc8941e407aa20f577374ee88364ee10a98fdbe0aece96e29"
   end
 
   resource "rchitect" do
-    url "https://files.pythonhosted.org/packages/d0/39/0b6c2ca15c8d83000b661abdb53b1ee3f6138416eda2dfdb4e0e872339c1/rchitect-0.3.40.tar.gz"
-    sha256 "1c5de5c4914dcb34225e7b62dbfc5df7b857b0b4bc18d4adf03611c45847b8b7"
+    url "https://files.pythonhosted.org/packages/d5/5a/247229fca143273687f1fafc7a8ae9172f7e12d9381edb1d46519cf5957e/rchitect-0.4.1.tar.gz"
+    sha256 "6b8860f7af62582eaf405882d23a08b8e923f0f4437a2cd53684871d24dc21c3"
   end
 
   resource "six" do
@@ -47,8 +47,8 @@ class Radian < Formula
   end
 
   resource "wcwidth" do
-    url "https://files.pythonhosted.org/packages/89/38/459b727c381504f361832b9e5ace19966de1a235d73cdbdea91c771a1155/wcwidth-0.2.5.tar.gz"
-    sha256 "c4d647b99872929fdb7bdcaa4fbe7f01413ed3d98077df798530e5b04f116c83"
+    url "https://files.pythonhosted.org/packages/5e/5f/1e4bd82a9cc1f17b2c2361a2d876d4c38973a997003ba5eb400e8a932b6c/wcwidth-0.2.6.tar.gz"
+    sha256 "a5220780a404dbe3353789870978e472cfe477761f06ee55077256e509b156d0"
   end
 
   def install
