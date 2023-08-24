@@ -1,8 +1,8 @@
 class Pistol < Formula
   desc "General purpose file previewer"
   homepage "https://github.com/doronbehar/pistol"
-  url "https://github.com/doronbehar/pistol/archive/v0.3.2.tar.gz"
-  sha256 "7eaf196bbf9f8aaa78a9688ee8c13dbd5c91050e470526e052256a2dd35988d0"
+  url "https://github.com/doronbehar/pistol/archive/v0.4.2.tar.gz"
+  sha256 "559607de2904b7a45456eeabb6d60f2586fa50168f3974ec24f8b341dd8458de"
   license "MIT"
   head "https://github.com/doronbehar/pistol.git", branch: "master"
 
