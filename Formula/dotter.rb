@@ -6,9 +6,9 @@ class Dotter < Formula
   license "Unlicense"
 
   bottle do
-    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/dotter-0.12.14"
-    sha256 cellar: :any_skip_relocation, monterey:     "e63399d72b693a33c91dcc54ab0075610f248abc1142b292694783526f1c4b2d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "b30d35d8eba6e9c919a120a76707c85a43712ba63349cf85caf8973fe7d4a089"
+    root_url "https://github.com/shunsambongi/homebrew-tap/releases/download/dotter-0.13.0"
+    sha256 cellar: :any_skip_relocation, monterey:     "47f20ea27e2c9f3e58f28db5cef2137d183d0800bfe2f70c2ab9354f0b2754d3"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "1cb77eae4c0d54538b20770a4b0846425c152116b82ad1b1c2211806e955192a"
   end
 
   depends_on "rust" => :build
